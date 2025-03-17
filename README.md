@@ -1,1 +1,1 @@
-# Ph-n-m-m-qu-n-l-HUST-
+HUST Management System
