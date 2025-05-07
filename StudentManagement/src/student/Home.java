@@ -34,7 +34,6 @@ public class Home extends javax.swing.JPanel {
         jPanel4 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jComboBox1 = new javax.swing.JComboBox<>();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
@@ -176,7 +175,7 @@ public class Home extends javax.swing.JPanel {
         jPanel1.setBackground(new java.awt.Color(255, 204, 255));
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(null));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 40)); // NOI18N
         jLabel1.setText("STUDENT MANAGEMENT SYSTEM");
@@ -203,13 +202,10 @@ public class Home extends javax.swing.JPanel {
         jPanel3.setBackground(new java.awt.Color(204, 204, 255));
 
         jPanel4.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jTextField1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
 
         jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-
-        jDateChooser1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
 
         jComboBox1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female" }));
@@ -267,7 +263,6 @@ public class Home extends javax.swing.JPanel {
         jLabel10.setText("Address");
 
         jPanel6.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jButton1.setBackground(new java.awt.Color(204, 255, 255));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -277,8 +272,6 @@ public class Home extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        jPanel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -350,15 +343,10 @@ public class Home extends javax.swing.JPanel {
                                     .addComponent(jLabel2)
                                     .addComponent(jLabel3)
                                     .addComponent(jLabel4))
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel4Layout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE)
-                                            .addComponent(jTextField2)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                                        .addGap(17, 17, 17)
-                                        .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE)
+                                    .addComponent(jTextField2)))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -376,9 +364,7 @@ public class Home extends javax.swing.JPanel {
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addGap(12, 12, 12)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5)
@@ -404,12 +390,11 @@ public class Home extends javax.swing.JPanel {
                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 238, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         jPanel8.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel12.setText("Search Student");
@@ -458,8 +443,6 @@ public class Home extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        jPanel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
-
         jTable1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -491,7 +474,6 @@ public class Home extends javax.swing.JPanel {
         );
 
         jPanel11.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jButton4.setBackground(new java.awt.Color(255, 204, 255));
         jButton4.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -591,13 +573,11 @@ public class Home extends javax.swing.JPanel {
         jPanel9.setBackground(new java.awt.Color(204, 204, 255));
 
         jPanel12.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel13.setText(" ID");
 
         jPanel13.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel14.setText("Student's ID");
@@ -761,7 +741,6 @@ public class Home extends javax.swing.JPanel {
         );
 
         jPanel15.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jLabel23.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel23.setText("Search Student");
@@ -810,8 +789,6 @@ public class Home extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        jPanel16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
-
         jTable2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -845,7 +822,6 @@ public class Home extends javax.swing.JPanel {
         );
 
         jPanel17.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jButton13.setBackground(new java.awt.Color(255, 204, 255));
         jButton13.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -977,10 +953,8 @@ public class Home extends javax.swing.JPanel {
         jPanel18.setBackground(new java.awt.Color(204, 204, 255));
 
         jPanel19.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jPanel14.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jLabel22.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel22.setText("Student's ID");
@@ -1007,14 +981,13 @@ public class Home extends javax.swing.JPanel {
             .addGroup(jPanel14Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jTextField11, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField14))
+                    .addComponent(jTextField14)
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton38)
                 .addGap(11, 11, 11))
@@ -1218,7 +1191,6 @@ public class Home extends javax.swing.JPanel {
         );
 
         jPanel22.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel22.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jLabel34.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel34.setText("Search Student");
@@ -1267,8 +1239,6 @@ public class Home extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        jPanel23.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
-
         jTable3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1301,7 +1271,6 @@ public class Home extends javax.swing.JPanel {
         );
 
         jPanel24.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel24.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jButton22.setBackground(new java.awt.Color(255, 204, 255));
         jButton22.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -1370,7 +1339,7 @@ public class Home extends javax.swing.JPanel {
                     .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1391,10 +1360,8 @@ public class Home extends javax.swing.JPanel {
         jPanel25.setBackground(new java.awt.Color(204, 204, 255));
 
         jPanel26.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel26.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jPanel20.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jLabel24.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel24.setText("Student's ID");
@@ -1438,7 +1405,6 @@ public class Home extends javax.swing.JPanel {
         );
 
         jPanel21.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel21.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jLabel25.setFont(new java.awt.Font("Times New Roman", 1, 30)); // NOI18N
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1484,8 +1450,6 @@ public class Home extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        jPanel30.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
-
         jTable5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jTable5.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1518,7 +1482,6 @@ public class Home extends javax.swing.JPanel {
         );
 
         jPanel31.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel31.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 255), 4, true));
 
         jButton34.setBackground(new java.awt.Color(255, 204, 255));
         jButton34.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -1753,7 +1716,6 @@ public class Home extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JComboBox<String> jComboBox9;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
