@@ -1,6 +1,6 @@
 create database student_management;
 use student_management;
-
+--drop database student_management;
 create table admin(
 	id int not null identity (1,1),
 	username nvarchar(45) not null,
@@ -42,8 +42,9 @@ create table score(
 	student_id int not null,
 	semester int not null,
 	course1 nvarchar(200) not null,
-	score1 numeric(5,2) not null, -- (-999.99 to 999.99)
-	(-- numeric (6,2) -9999.99 to 9999.99)
+	score1 numeric(5,2) not null, /* (-999.99 to 999.99)
+	--(-- numeric (6,2) -9999.99 to 9999.99)
+	*/
 	course2 nvarchar(200) not null,
 	score2 numeric(5,2) not null,
 	course3 nvarchar(200) not null,
