@@ -175,7 +175,8 @@ public class Home extends javax.swing.JPanel {
         jPanel1.setBackground(new java.awt.Color(255, 204, 255));
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(null));
+        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 40)); // NOI18N
         jLabel1.setText("STUDENT MANAGEMENT SYSTEM");
