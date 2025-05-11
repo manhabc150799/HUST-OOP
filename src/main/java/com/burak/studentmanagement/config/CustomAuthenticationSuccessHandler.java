@@ -16,7 +16,7 @@ import com.burak.studentmanagement.service.StudentService;
 import com.burak.studentmanagement.service.TeacherService;
 
 @Component
-public class CustomAuthenticationSuccessHandler implements uthenticationSuccessHandler {A
+public class CustomAuthenticationSuccessHandler implements AuthenticationSuccessHandler {
 	
 	@Autowired
 	private StudentService studentService;
