@@ -4,15 +4,10 @@ public class EnrolledSubject {
 
 	public int studentId;
 	
-	public float midtermScore;
 
-	public float finalScore;
-
-	public EnrolledSubject(ClassSection classSection, int studentId, float midtermScore, float finalScore) {
+	public EnrolledSubject(ClassSection classSection, int studentId) {
 		this.classSection = classSection;
 		this.studentId = studentId;
-		this.midtermScore = midtermScore;
-		this.finalScore = finalScore;
 	}
 
 }

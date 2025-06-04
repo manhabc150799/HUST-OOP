@@ -23,14 +23,13 @@ public abstract class Student extends User {
 		this.schedules = new ArrayList<Schedule>();
 	}
 
-
-	public abstract void viewResult();
+	public String getStudentId() {
+		return studentId;
+	}
 
 	public abstract double calculateCPA();
 
 	public abstract boolean checkGraduationRequirements();
-
-	public abstract void viewTimeTable();
 
 	public abstract boolean enrollClassSection();
 	

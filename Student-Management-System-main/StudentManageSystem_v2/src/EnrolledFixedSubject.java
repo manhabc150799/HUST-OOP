@@ -12,7 +12,7 @@ public class EnrolledFixedSubject extends EnrolledSubject {
 
 	public EnrolledFixedSubject(ClassSection classSection, int studentId, FixedSubject subject, int academicYear,
 			double examScore, String status) {
-		super(classSection, studentId,; 
+		super(classSection, studentId); 
 		this.subject = subject;
 		this.academicYear = academicYear;
 		this.examScore = examScore;
@@ -22,7 +22,10 @@ public class EnrolledFixedSubject extends EnrolledSubject {
 	public boolean isPassed() {
 		return examScore > 5;
 	}
-
+	public float calculateTotalScore() {
+        return Math.round(examScore * 10) / 10.0f; // Làm tròn đến số thập phân thứ nhất
+    }
+	
 	public String toString() {
 		return "EnrolledFixedSubject{" +
 	            "subject=" + subject.subjectName +

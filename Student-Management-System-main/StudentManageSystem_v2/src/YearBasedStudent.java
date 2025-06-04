@@ -13,9 +13,6 @@ public class YearBasedStudent extends Student implements ParticipateAcademic {
 		EnrolledFixedSubjects = new ArrayList<EnrolledFixedSubject>();
 	}
 
-	public void viewRepeatSubject() {
-		
-	}
 
 	public String toString() {
 		int completedCourse = EnrolledFixedSubjects.stream()

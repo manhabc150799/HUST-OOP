@@ -63,6 +63,7 @@ public class Lecturer extends User implements ParticipateAcademic {
 		this.schedules = schedules;
 	}
 	
+	//Xem lich day
 	@Override
     public void viewTimeTable() {
     System.out.println("Teaching Schedule:");
@@ -79,6 +80,7 @@ public class Lecturer extends User implements ParticipateAcademic {
 }
 
 @Override
+//Xem danh sach sinh vien lop minh day
 public void viewResult() {
     System.out.println("Student Results for Your Classes:");
     List<ClassSection> classes = getAssignedClasses();
@@ -95,8 +97,6 @@ public void viewResult() {
         }
         for (Student student : students) {
             System.out.println("  Student: " + student.getFullName() + " - ID: " + student.getStudentId());
-            // Nếu có điểm, in điểm ở đây nếu bạn có phương thức lấy điểm
-            // System.out.println("    Score: " + ...);
         }
     }
 }

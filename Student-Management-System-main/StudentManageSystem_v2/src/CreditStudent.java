@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class CreditStudent extends Student {
+public class CreditStudent extends Student implements ParticipateAcademic {
 
 	private List<EnrolledCreditSubject> enrolledCreditSubjects;
 	
@@ -11,7 +11,6 @@ public class CreditStudent extends Student {
 		super(userId, email, password, fullName, role, status, dob, studentId, major);
 		this.enrolledCreditSubjects = new ArrayList<EnrolledCreditSubject>();
 	}
-
 	
 
 	public String toString() {
