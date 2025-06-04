@@ -1,0 +1,22 @@
+package com.burak.studentmanagement.entity;
+
+public class Credit_basedStudent extends Student {
+
+   private list<EnrolledSubject> listOfEnrolledSubject;
+
+	public void viewResult() {
+
+	}
+
+	public void calculateCPA() {
+
+	}
+
+	public boolean checkGraduationRequirements() {
+		return false;
+	}
+
+	public String toString() {
+		return null;
+	}
+}
