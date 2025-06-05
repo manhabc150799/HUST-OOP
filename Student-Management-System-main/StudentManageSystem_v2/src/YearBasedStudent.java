@@ -65,7 +65,7 @@ public class YearBasedStudent extends Student implements ParticipateAcademic {
         }
     }
     if (passedSubjects == 0) return 0.0;
-    return totalScore / passedSubjects;
+    return ((totalScore / passedSubjects)*4)/10; //chuyen ve he 4
 }
 
 	@Override

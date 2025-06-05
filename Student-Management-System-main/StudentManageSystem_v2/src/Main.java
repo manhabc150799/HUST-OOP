@@ -17,7 +17,7 @@ public class Main {
 	public static ArrayList<Subject> creditSubjects = new ArrayList<Subject>();
 	public static ArrayList<Subject> fixedSubjects = new ArrayList<Subject>();
 	
-	public static ArrayList<CreditStudent> creditStudents = new ArrayList<CreditStudent>();
+	public static ArrayList<CreditBasedStudent> creditStudents = new ArrayList<CreditBasedStudent>();
     public static ArrayList<YearBasedStudent> yearBasedStudents = new ArrayList<YearBasedStudent>();
     
     public static ArrayList<Subject> readcreditSubjectsFromExcel(String filePath) throws IOException {
@@ -77,7 +77,7 @@ public class Main {
         
         ArrayList<User> users = new ArrayList<>();
         users.add(new Manager("M01", "1", "1", "Admin", "Manager", true, "1980-01-01", "MG123"));
-        users.add(new CreditStudent("S01", "student@example.com", "password", "Student A", "Student", true, "2001-01-01", "ST123","Information Technology"));
+        users.add(new CreditBasedStudent("S01", "student@example.com", "password", "Student A", "Student", true, "2001-01-01", "ST123","Information Technology"));
         users.add(new Lecturer("L01", "lecturer@example.com", "password", "Lecturer B", "Lecturer", true, "1975-03-21","LT01", "KCNTT"));
         
         
