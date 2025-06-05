@@ -5,7 +5,7 @@ import java.util.List;
 public class YearBasedStudent extends Student implements ParticipateAcademic {
 
 	private List<EnrolledFixedSubject> EnrolledFixedSubjects;
-
+    private List<String> enrolledClassIds = new ArrayList<>();
 	
 	public YearBasedStudent(String userId, String email, String password, String fullName, String role, boolean status, String dob,
 			String studentId, String major) {
@@ -98,7 +98,9 @@ public class YearBasedStudent extends Student implements ParticipateAcademic {
 	public void setEnrolledFixedSubjects(List<EnrolledFixedSubject> enrolledFixedSubjects) {
 		EnrolledFixedSubjects = enrolledFixedSubjects;
 	}
-	
+    public void removeEnrolledClass(String classSectionId) {
+    enrolledClassIds.remove(classSectionId);
+    }
 	private int getCurrentAcademicYear() {
         int CurrentAcademicYear = EnrolledFixedSubjects.stream()
             .mapToInt(subject -> subject.academicYear)

@@ -8,7 +8,7 @@ public class Lecturer extends User implements ParticipateAcademic {
 	private String department;
 
 	private List<ClassSection> assignedClasses;
-	
+	private List<String> assignedClassIds = new ArrayList<>(); //them
 	private List<Schedule> schedules;
 	
 	
@@ -98,6 +98,21 @@ public void viewResult() {
         for (Student student : students) {
             System.out.println("  Student: " + student.getFullName() + " - ID: " + student.getStudentId());
         }
+    }}
+	
+
+    public void addAssignedClass(String classSectionId ) {
+    if (!assignedClassIds.contains(classSectionId)) {
+        assignedClassIds.add(classSectionId);
+     }
     }
-}
+
+    public void removeAssignedClass(String classSectionId) {
+    assignedClassIds.remove(classSectionId);
+    }
+
+    public List<String> getAssignedClassIds() {
+    return assignedClassIds;
+    }
+
 }

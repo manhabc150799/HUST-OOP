@@ -2,11 +2,12 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class CreditStudent extends Student implements ParticipateAcademic {
+public class CreditBasedStudent extends Student implements ParticipateAcademic {
 
 	private List<EnrolledCreditSubject> enrolledCreditSubjects;
-	
-	public CreditStudent(String userId, String email, String password, String fullName, String role, boolean status, String dob,
+	private List<String> enrolledClassIds = new ArrayList<>();
+
+	public CreditBasedStudent(String userId, String email, String password, String fullName, String role, boolean status, String dob,
 			String studentId, String major) {
 		super(userId, email, password, fullName, role, status, dob, studentId, major);
 		this.enrolledCreditSubjects = new ArrayList<EnrolledCreditSubject>();
@@ -98,10 +99,12 @@ public class CreditStudent extends Student implements ParticipateAcademic {
 	public boolean enrollClassSection() {
 		return false;
 	}
-	
+	public void removeEnrolledClass(String classSectionId) {
+                enrolledClassIds.remove(classSectionId);
+	}
 	
 	private int getCurrentSemester() {
-        // Placeholder for determining the current semester.
+        
         return 1;
     }
 }
