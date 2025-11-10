@@ -33,8 +33,5 @@ public abstract class Student extends User {
 
 	public abstract boolean enrollClassSection();
 	
-	public abstract void removeEnrolledClass();
-	
-	
 	
 }

@@ -5,7 +5,6 @@ import java.util.List;
 public class CreditBasedStudent extends Student implements ParticipateAcademic {
 
 	private List<EnrolledCreditSubject> enrolledCreditSubjects;
-	private List<String> enrolledClassIds = new ArrayList<>();
 
 	public CreditBasedStudent(String userId, String email, String password, String fullName, String role, boolean status, String dob,
 			String studentId, String major) {
@@ -99,12 +98,12 @@ public class CreditBasedStudent extends Student implements ParticipateAcademic {
 	public boolean enrollClassSection() {
 		return false;
 	}
-	public void removeEnrolledClass(String classSectionId) {
-                enrolledClassIds.remove(classSectionId);
-	}
 	
 	private int getCurrentSemester() {
+            return enrolledCreditSubjects.stream()
+            .mapToInt(subject -> subject.semeter)
+            .max()
+            .orElse(1);
         
-        return 1;
     }
 }
